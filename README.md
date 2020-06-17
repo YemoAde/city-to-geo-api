@@ -1,6 +1,6 @@
 # city-to-geo-api
 
-A Search City to lat/lon api in a TypeScript
+A Search City to lat/lon api in TypeScript
 
 ## Installation
 
