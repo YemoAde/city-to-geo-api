@@ -34,7 +34,5 @@ npm run test
 ## Credits
 - Open Weather Map
 
-Please make sure to update tests as appropriate.
-
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
