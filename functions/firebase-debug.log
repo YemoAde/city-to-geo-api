@@ -1,0 +1,37 @@
+[debug] [2020-06-18T18:19:23.944Z] ----------------------------------------------------------------------
+[debug] [2020-06-18T18:19:23.947Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\casa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2020-06-18T18:19:23.947Z] CLI Version:   7.15.0
+[debug] [2020-06-18T18:19:23.947Z] Platform:      win32
+[debug] [2020-06-18T18:19:23.947Z] Node Version:  v11.6.0
+[debug] [2020-06-18T18:19:23.949Z] Time:          Thu Jun 18 2020 15:19:23 GMT-0300 (Atlantic Daylight Time)
+[debug] [2020-06-18T18:19:23.949Z] ----------------------------------------------------------------------
+[debug] [2020-06-18T18:19:23.949Z] 
+[debug] [2020-06-18T18:19:23.976Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-06-18T18:19:23.976Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[debug] [2020-06-18T18:19:26.006Z] [hub] writing locator at C:\Users\casa\AppData\Local\Temp\hub-city-to-geo-api.json
+[info] +  hub: emulator hub started at http://localhost:4400
+[warn] !  Your requested "node" version "8" doesn't match your global version "11"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\casa\Documents\Gabriel\Github\city-to-geo-api\functions" for Cloud Functions...
+[debug] [2020-06-18T18:19:28.564Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-06-18T18:19:28.564Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-06-18T18:19:28.564Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-06-18T18:19:28.564Z] [worker-~diagnostic~-2783e9a6-868d-4b60-9169-78da6f435a3d]: Assigning socketPath: \\?\pipe\C:\Users\casa\Documents\Gabriel\Github\city-to-geo-api\functions\30224
+[debug] [2020-06-18T18:19:28.565Z] [worker-~diagnostic~-2783e9a6-868d-4b60-9169-78da6f435a3d]: BUSY
+[debug] [2020-06-18T18:19:28.971Z] [runtime-status] [30224] Functions runtime initialized. {"cwd":"C:\\Users\\casa\\Documents\\Gabriel\\Github\\city-to-geo-api\\functions","node_version":"11.6.0"}
+[debug] [2020-06-18T18:19:28.973Z] [runtime-status] [30224] Disabled runtime features: undefined
+[debug] [2020-06-18T18:19:28.976Z] [runtime-status] [30224] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"C:\\Users\\casa\\Documents\\Gabriel\\Github\\city-to-geo-api\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-06-18T18:19:28.978Z] [runtime-status] [30224] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.7.0","resolution":"C:\\Users\\casa\\Documents\\Gabriel\\Github\\city-to-geo-api\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-06-18T18:19:29.579Z] [runtime-status] [30224] Found google-gax at C:\Users\casa\Documents\Gabriel\Github\city-to-geo-api\functions\node_modules\google-gax\build\src\index.js
+[debug] [2020-06-18T18:19:29.580Z] [runtime-status] [30224] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"},{"name":"google-gax","status":"mocked"}]
+[debug] [2020-06-18T18:19:29.781Z] [runtime-status] [30224] Checked functions.config() {"config":{}}
+[debug] [2020-06-18T18:19:29.783Z] [runtime-status] [30224] Error in handleMessage: {"frb":{"cwd":"C:\\Users\\casa\\Documents\\Gabriel\\Github\\city-to-geo-api\\functions","projectId":"city-to-geo-api","triggerId":"","emulators":{},"socketPath":"\\\\?\\pipe\\C:\\Users\\casa\\Documents\\Gabriel\\Github\\city-to-geo-api\\functions\\30224"},"opts":{"nodeBinary":"C:\\Program Files\\nodejs\\node.exe"}} => TypeError: Cannot set property config of #<Object> which has only a getter: TypeError: Cannot set property config of #<Object> which has only a getter
+    at C:\Users\casa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:519:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\casa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58)
+    at process.internalTickCallback (internal/process/next_tick.js:77:7)
+[warn] !  functions: Cannot set property config of #<Object> which has only a getter
+[warn] !  Your function was killed because it raised an unhandled error.
+[debug] [2020-06-18T18:19:29.793Z] [worker-~diagnostic~-2783e9a6-868d-4b60-9169-78da6f435a3d]: exited
+[debug] [2020-06-18T18:19:29.793Z] [worker-~diagnostic~-2783e9a6-868d-4b60-9169-78da6f435a3d]: FINISHED
