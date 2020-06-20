@@ -5,17 +5,17 @@ export type IRequest = (req: Request, res: Response) => any
 export type ICityResponse = (req: Request, res: Response<IResponse<TCities>>, next?: NextFunction) => any
 
 export interface IController {
-    create: IRequest;
-    find: IRequest;
-    findAll: IRequest
+    create?: IRequest;
+    find?: IRequest;
+    findAll?: IRequest
 }
 
 export interface ICityController extends IController {
     search: (req: Request, res: Response) => any
 }
 
-export interface IResources<IController> {
-    controller: IController;
+export interface IResources<T> {
+    controller: T;
     router: Router;
     cacheStrategy: ICache;
 }

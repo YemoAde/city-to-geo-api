@@ -1,6 +1,5 @@
 import { Request, Response, NextFunction } from 'express'
 import { ICache } from '../interfaces';
-// import NodeCache from 'node-cache';
 const NodeCache = require('node-cache')
 
 
@@ -19,7 +18,8 @@ class SimpleCache implements ICache {
     set = (req: Request, res: Response, next: NextFunction): any => {
         const url = this.getUrlFromRequest(req)
         this.cache.set(url, res.locals.data)
-        return next()
+        next();
+        return
     }
     get = (req: Request, res: Response, next: NextFunction): any => {
         const url = this.getUrlFromRequest(req)
@@ -28,7 +28,8 @@ class SimpleCache implements ICache {
         if (content) {
             return res.status(200).json(content)
         }
-        return next()
+        next();
+        return
     }
 
 }
