@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && cp src/*.json dist && tsc",
+    "build": "rimraf dist && tsc",
     "start": "node dist/index.js",
     "dev": "nodemon --exec ts-node src/index.ts --watch src",
     "test": "jest --watch",
