@@ -1,4 +1,4 @@
-# city-to-geo-api
+# city-to-geo-api (Firebase Cloud Functions)
 
 A simple Typescript/NodeJS City to lat/lon search api hosted [here](http://city-to-geo-api.herokuapp.com/city/search).
 Development in progress.
