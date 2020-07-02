@@ -2,20 +2,20 @@ import { Request, Response, Router, NextFunction } from 'express';
 
 export type IRequest = (req: Request, res: Response) => any
 
-export type ICityResponse = (req: Request, res: Response<IResponse<TCities>>, next: NextFunction) => any
+export type ICityResponse = (req: Request, res: Response<IResponse<TCities>>, next?: NextFunction) => any
 
 export interface IController {
-    create?: IRequest,
-    find?: IRequest,
-    findAll?: IRequest
+    create: IRequest;
+    find: IRequest;
+    findAll: IRequest
 }
 
 export interface ICityController extends IController {
-    search: ICityResponse
+    search: (req: Request, res: Response) => any
 }
 
-export interface IResources<T> {
-    controller: T;
+export interface IResources<IController> {
+    controller: IController;
     router: Router;
     cacheStrategy: ICache;
 }
