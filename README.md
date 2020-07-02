@@ -1,13 +1,20 @@
-# city-to-geo-api
+# city-to-geo-api (Firebase Cloud Functions)
 
-A Search City to lat/lon api in TypeScript
+A simple Typescript/NodeJS City to lat/lon search api hosted [here](http://city-to-geo-api.herokuapp.com/city/search).
+Development in progress.
+- Uses Simple Caching
+- Applies an OOP Design Pattern
+- Experiments with worker threads ( 😒 Did not make it faster in my use case)
 
-## Installation
+## Usage
 
 ```bash
-npm install
+curl -v http://city-to-geo-api.herokuapp.com/city/search/?
 ```
-Development in progress. Not available for use
+For example,
+```bash
+curl -v http://city-to-geo-api.herokuapp.com/city/search/Lagos
+```
 
 ## Tests
 
@@ -17,19 +24,18 @@ npm run test && npm run coverage
 ## Contribution
 
 ```bash
-npm run test
+npm install
 ```
+- Write Tests
 
 
 
 ## Todo
-- Documentation
+- Swagger Documentation
 - Authentication
-- Advanced Caching
+- Advanced Caching (Maybe Redis)
 - Request Throttling
-- Code Coverage
 - Document Time Evaluation with Worker Threads vs w/o Worker Threads
-
 
 ## Credits
 - Open Weather Map
