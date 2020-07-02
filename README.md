@@ -27,6 +27,7 @@ npm run test && npm run coverage
 npm install
 ```
 - Write Tests
+- Review staging-xxx branches
 
 
 
