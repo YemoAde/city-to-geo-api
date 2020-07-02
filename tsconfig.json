@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "outDir": "dist",
+        "sourceMap": false,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "node_modules/",
+            ],
+            "typings/*": [
+                "src/typings/*"
+            ]
+        },
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/worker/pool.js", "src/worker/search-worker.js"
+    ],
+    "exclude": [
+        "src/test/*.spec.ts"
+    ]
+}

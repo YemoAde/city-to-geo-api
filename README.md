@@ -1,20 +1,13 @@
 # city-to-geo-api
 
-A simple Typescript/NodeJS City to lat/lon search api hosted [here](http://city-to-geo-api.herokuapp.com/city/search).
-Development in progress.
-- Uses Simple Caching
-- Applies an OOP Design Pattern
-- Experiments with worker threads ( 😒 Did not make it faster in my use case)
+A Search City to lat/lon api in TypeScript
 
-## Usage
+## Installation
 
 ```bash
-curl -v http://city-to-geo-api.herokuapp.com/city/search/?
+npm install
 ```
-For example,
-```bash
-curl -v http://city-to-geo-api.herokuapp.com/city/search/Lagos
-```
+Development in progress. Not available for use
 
 ## Tests
 
@@ -24,18 +17,19 @@ npm run test && npm run coverage
 ## Contribution
 
 ```bash
-npm install
+npm run test
 ```
-- Write Tests
 
 
 
 ## Todo
-- Swagger Documentation
+- Documentation
 - Authentication
-- Advanced Caching (Maybe Redis)
+- Advanced Caching
 - Request Throttling
+- Code Coverage
 - Document Time Evaluation with Worker Threads vs w/o Worker Threads
+
 
 ## Credits
 - Open Weather Map

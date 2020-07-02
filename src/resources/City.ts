@@ -1,5 +1,8 @@
-import { IResources, ICityController, ICache } from "../interfaces";
+import { IResources, ICityController, ICache, IResponse, TCities } from "../interfaces";
 import { Router, } from 'express';
+
+const CityRouter = Router()
+CityRouter.get('/search/:q',)
 
 export default class CityResource implements IResources<ICityController> {
     controller: ICityController;
@@ -8,7 +11,6 @@ export default class CityResource implements IResources<ICityController> {
 
     //dependency Injection
     constructor(controller: ICityController, cacheStrategy: ICache) {
-        this.controller = controller;
         this.cacheStrategy = cacheStrategy;
         this.router.get('/search/:query',
             cacheStrategy.get,
