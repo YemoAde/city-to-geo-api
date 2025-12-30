@@ -4,6 +4,6 @@ on:
 
 jobs:
   Explore-GitHub-Actions:
-    runs-on: panda-server-00-set
+    runs-on: panda-server-00-set-repo-citytogeo
     steps:
     - run: echo "🎉 This job uses runner scale set runners!"
