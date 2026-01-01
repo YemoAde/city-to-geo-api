@@ -1,9 +1,1 @@
-name: Actions Runner Controller Demo
-on:
-  workflow_dispatch:
 
-jobs:
-  Explore-GitHub-Actions:
-    runs-on: panda-server-00-set-repo-citytogeo
-    steps:
-    - run: echo "🎉 This job uses runner scale set runners!"
